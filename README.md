@@ -27,17 +27,31 @@ Pre-Requisites:
 
 ### Run the below commands to install Java and Jenkins
 
-Install Java
+Install Java 11
 
 ```
 sudo apt update
 sudo apt install openjdk-11-jre
+```
+or
+Install 8
+```
+ wget -O- https://apt.corretto.aws/corretto.key | sudo apt-key add - 
+ sudo add-apt-repository 'deb https://apt.corretto.aws stable main'
+ 
+ sudo apt-get update; sudo apt-get install -y java-1.8.0-amazon-corretto-jdk
+ 
+ sudo update-alternatives --config java
 ```
 
 Verify Java is Installed
 
 ```
 java -version
+```
+Maven Installation:
+```
+apt install maven
 ```
 
 Now, you can proceed with installing Jenkins
