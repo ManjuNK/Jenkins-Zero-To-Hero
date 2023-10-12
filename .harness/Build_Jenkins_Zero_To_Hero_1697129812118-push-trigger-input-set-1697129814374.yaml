@@ -1,0 +1,14 @@
+inputSet:
+  name: Build_Jenkins_Zero_To_Hero_1697129812118-push-trigger-input-set
+  identifier: Build_Jenkins_Zero_To_Hero_1697129812118pushtriggerinputset
+  orgIdentifier: default
+  projectIdentifier: default_project
+  pipeline:
+    identifier: Build_Jenkins_Zero_To_Hero_1697129812118
+    properties:
+      ci:
+        codebase:
+          build:
+            type: branch
+            spec:
+              branch: <+trigger.branch>
